@@ -6,163 +6,132 @@
     <title>Horizun</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-     <link rel="icon" href="images/Untitled design (2).png" type="image/png" />
+    <link rel="icon" href="images/Untitled design (2).png" type="image/png" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              playfair: ['Playfair Display', 'serif']
+            }
+          }
+        }
+      }
+    </script>
 </head>
+<body class="bg-white text-black">
 
-<header class="bg-white text-black flex justify-between items-center px-40 py-10 fixed top-0 w-full z-50">
+<header class="bg-white text-black flex justify-between items-center px-6 md:px-20 lg:px-40 py-6 md:py-10 fixed top-0 w-full z-50">
     <div>
-        <i class="fas fa-shopping-bag text-xl">
-        </i>
+        <i class="fas fa-shopping-bag text-xl"></i>
     </div>
-    <div class="text-lg tracking-widest font-[Tangerine] w-24 md:w-32 lg:w-30 h-auto">
-        <img src="images/3b54b93e-e1c0-4236-8ca3-5af528914d07_removalai_preview.png">
+    <div class="w-24 md:w-32">
+        <img src="images/3b54b93e-e1c0-4236-8ca3-5af528914d07_removalai_preview.png" alt="Horizun Logo">
     </div>
-
     <div class="flex items-center space-x-2">
         <i class="fas fa-bars text-xl"></i>
         <span class="text-sm font-semibold">MENU</span>
     </div>
 </header>
 
-
-
-<section class="h-screen bg-black px-10">
-    <div class="swiper mySwiper h-full">
-
-      <div class="swiper-wrapper">
-
-        <!-- Slide 1 -->
-        <div class="swiper-slide h-screen flex items-center justify-end bg-cover bg-black px-60"
-             style="background-image: url('images/special edition (1).png');">
-          <div class="text-center">
-            <img src="images/1df6e320-7839-488f-8edc-8d7a2791a3d2_removalai_preview.png" class="max-w-lg w-auto h-100 mx-auto">
-            <a href="shop_page.html">
-              <button class="mt-4 px-8 py-3 border border-white text-white text-sm tracking-widest hover:bg-white hover:text-black transition duration-300 font-['Playfair_Display']">
-                DISCOVER THE PREMIUM COLLECTION
-              </button>
-            </a>
-          </div>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="swiper-slide h-screen flex items-center bg-cover bg-center bg-black px-20"
-        
-             style="background-image: url('images/special edition (2).png');">
-          <div class="text-white justify-between">
-            <h2 class="text-1xl px-2" style="letter-spacing: 20px;">GT-640</h2>
-            <h3 class="text-6xl mb-4 font-bold">DARK FLASK</h3>
-            <a href="shop_page.html">
-                <button class="mt-4 px-8 py-3 border border-white text-white text-sm tracking-widest hover:bg-white hover:text-black transition duration-300 font-['Playfair_Display']">
-                    DISCOVER NEW FLASK
-                </button>       
-            </a>
-          </div>
-      </div>
-
-      <div class="swiper-pagination "></div>
-    
-      <style>
-        .swiper-pagination-bullet {
-          background-color: rgb(0, 0, 0);
-          border: 1px solid #ffffff; 
-          opacity: 0.4; 
-          width: 10px; 
-          height: 10px; 
-          margin: 0 4px; 
-          border-radius: 50%; 
-        }
-      
-        .swiper-pagination-bullet-active {
-          background-color: #ffffff; 
-          opacity: 1;  
-        }
-      </style>
-      
-    </div>
-
-    
-  </section>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    const swiper = new Swiper('.mySwiper', {
-      loop: true,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true
-      }
-    });
-  </script>
-
-    <section class="py-1 bg-white text-center">
-        <div class="flex justify-center gap-1">
-            <img src="images/collection3.png" alt="Bottle" class="bottle-thumb">
-            <img src="images/collection2.png" alt="Bottle" class="bottle-thumb">
-            <img src="images/collection4.png" alt="Bottle" class="bottle-thumb">
-            <img src="images/collection5.png" alt="Bottle" class="bottle-thumb">
-        </div>
-        
-        <style>
-            .bottle-thumb {
-                width: 24.5vw;
-                height: auto; 
-                object-fit: contain; 
-            }
-        </style>
-
-         <h3 class="text-2xl text-black py-20 font-semibold">RUSSIAN ROULETTE'S COLLECTION</h3>
-          
-    </section>
-
-    <section class="h-screen flex items-center justify-center bg-cover bg-white px-60" style="background-image: url('images/whyhorizun.png');">
+<section class="h-screen bg-black px-4 md:px-10">
+  <div class="swiper mySwiper h-full">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide h-screen flex items-center justify-end bg-cover bg-center px-6 md:px-20 lg:px-60" style="background-image: url('images/special edition (1).png');">
         <div class="text-center">
-            <h2 class="text-7xl text-white py-3 font-bold">WHY HORIZUN STANDS OUT?</h2>
-            <a href="shop_page.html">
-                <button class="mt-4 px-8 py-3 border border-white text-white text-sm tracking-widest hover:bg-white hover:text-black transition duration-300 font-['Playfair_Display']">SHOP NOW</button>       
-            </a>
+          <img src="images/1df6e320-7839-488f-8edc-8d7a2791a3d2_removalai_preview.png" class="max-w-xs md:max-w-md lg:max-w-lg w-auto h-auto mx-auto">
+          <a href="shop_page.html">
+            <button class="mt-4 px-6 md:px-8 py-3 border border-white text-white text-sm tracking-widest hover:bg-white hover:text-black transition duration-300 font-playfair">
+              DISCOVER THE PREMIUM COLLECTION
+            </button>
+          </a>
         </div>
-    </section>
-    
-    <section class="py-1 text-center bg-white">
-        <div class="flex justify-center gap-1">
-            <img src="images/1.png" alt="Bottle" class="bottle-thumb">
-            <img src="images/2.png" alt="Bottle" class="bottle-thumb">
-            <img src="images/Unbeatable Temperature Retention.png" alt="Bottle" class="bottle-thumb">
-            <img src="images/3.png" alt="Bottle" class="bottle-thumb">
+      </div>
+      <div class="swiper-slide h-screen flex items-center bg-cover bg-center px-4 md:px-10 lg:px-20" style="background-image: url('images/special edition (2).png');">
+        <div class="text-white">
+          <h2 class="text-xs md:text-sm lg:text-xl tracking-widest">GT-640</h2>
+          <h3 class="text-3xl md:text-5xl lg:text-6xl mb-4 font-bold">DARK FLASK</h3>
+          <a href="shop_page.html">
+            <button class="mt-4 px-6 md:px-8 py-3 border border-white text-white text-sm tracking-widest hover:bg-white hover:text-black transition duration-300 font-playfair">
+              DISCOVER NEW FLASK
+            </button>
+          </a>
         </div>
-        
-        <style>
-            .bottle-thumb {
-                width: 24.5vw; 
-                height: auto;
-                object-fit: contain;
-            }
-        </style>
-    </section>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <style>
+      .swiper-pagination-bullet {
+        background-color: black;
+        border: 1px solid white;
+        opacity: 0.4;
+        width: 10px;
+        height: 10px;
+        margin: 0 4px;
+        border-radius: 50%;
+      }
+      .swiper-pagination-bullet-active {
+        background-color: white;
+        opacity: 1;
+      }
+    </style>
+  </div>
+</section>
 
-    <footer class="py-40 px-60 bg-black text-white">
-        <img src="images/a589862f-9d57-4dd3-bdb0-413de0b7eacb_removalai_preview.png"
-             class="filter grayscale brightness-0 invert py-7 w-auto max-w-32" alt="Horizun Logo">
-      
-        <div class="py-4">
-          <ul class="flex flex-wrap gap-6 text-sm">
-            <li><a href="index.html" class="hover:underline">Home</a></li>
-            <li><a href="about.html" class="hover:underline">About Us</a></li>
-            <li><a href="services.html" class="hover:underline">Services</a></li>
-            <li><a href="contact.html" class="hover:underline">Contact</a></li>
-            <li><a href="careers.html" class="hover:underline">Careers</a></li>
-            <li><a href="privacy.html" class="hover:underline">Privacy Policy</a></li>
-          </ul>
-        </div>
-      
-        <p class="text-sm">&copy; 2025 Horizun. All rights reserved.</p>
-      
-        <img src="images/3b54b93e-e1c0-4236-8ca3-5af528914d07_removalai_preview.png"
-             class="filter grayscale brightness-0 invert py-5" alt="Partner Logo">
-      </footer>
+<section class="py-10 bg-white text-center">
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-2">
+    <img src="images/collection3.png" alt="Bottle" class="w-full h-auto object-contain">
+    <img src="images/collection2.png" alt="Bottle" class="w-full h-auto object-contain">
+    <img src="images/collection4.png" alt="Bottle" class="w-full h-auto object-contain">
+    <img src="images/collection5.png" alt="Bottle" class="w-full h-auto object-contain">
+  </div>
+  <h3 class="text-2xl text-black py-10 font-semibold">RUSSIAN ROULETTE'S COLLECTION</h3>
+</section>
+
+<section class="h-screen flex items-center justify-center bg-cover bg-center px-4 md:px-10 lg:px-60" style="background-image: url('images/whyhorizun.png');">
+  <div class="text-center">
+    <h2 class="text-3xl md:text-5xl lg:text-7xl text-white py-3 font-bold">WHY HORIZUN STANDS OUT?</h2>
+    <a href="shop_page.html">
+      <button class="mt-4 px-6 md:px-8 py-3 border border-white text-white text-sm tracking-widest hover:bg-white hover:text-black transition duration-300 font-playfair">SHOP NOW</button>
+    </a>
+  </div>
+</section>
+
+<section class="py-10 bg-white text-center">
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-2">
+    <img src="images/1.png" alt="Bottle" class="w-full h-auto object-contain">
+    <img src="images/2.png" alt="Bottle" class="w-full h-auto object-contain">
+    <img src="images/Unbeatable Temperature Retention.png" alt="Bottle" class="w-full h-auto object-contain">
+    <img src="images/3.png" alt="Bottle" class="w-full h-auto object-contain">
+  </div>
+</section>
+
+<footer class="py-20 px-6 md:px-20 lg:px-60 bg-black text-white">
+  <img src="images/a589862f-9d57-4dd3-bdb0-413de0b7eacb_removalai_preview.png" class="filter grayscale brightness-0 invert py-7 w-auto max-w-[8rem]" alt="Horizun Logo">
+  <div class="py-4">
+    <ul class="flex flex-wrap gap-4 text-sm justify-center">
+      <li><a href="index.html" class="hover:underline">Home</a></li>
+      <li><a href="about.html" class="hover:underline">About Us</a></li>
+      <li><a href="services.html" class="hover:underline">Services</a></li>
+      <li><a href="contact.html" class="hover:underline">Contact</a></li>
+      <li><a href="careers.html" class="hover:underline">Careers</a></li>
+      <li><a href="privacy.html" class="hover:underline">Privacy Policy</a></li>
+    </ul>
+  </div>
+  <p class="text-sm text-center">&copy; 2025 Horizun. All rights reserved.</p>
+  <img src="images/3b54b93e-e1c0-4236-8ca3-5af528914d07_removalai_preview.png" class="filter grayscale brightness-0 invert py-5 mx-auto" alt="Partner Logo">
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.mySwiper', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    }
+  });
+</script>
+
 </body>
 </html>
