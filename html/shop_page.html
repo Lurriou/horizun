@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="icon" href="images/Untitled design (2).png" type="image/png" />
 </head>
-<body class="bg-white text-black overflow-x-hidden">
+<body class="bg-white text-black">
 
-<header class="bg-white text-black flex justify-between items-center px-4 md:px-8 lg:px-20 py-6 md:py-10 fixed top-0 w-full z-50">
+<header class="bg-white text-black flex justify-between items-center px-4 md:px-20 lg:px-40 py-6 md:py-10 fixed top-0 w-full z-50">
     <div>
         <i class="fas fa-shopping-bag text-xl"></i>
     </div>
-    <div class="text-lg tracking-widest font-[Tangerine] w-20 md:w-32 lg:w-40 h-auto">
-        <img src="images/3b54b93e-e1c0-4236-8ca3-5af528914d07_removalai_preview.png" class="w-full h-auto">
+    <div class="text-lg tracking-widest font-[Tangerine] w-24 md:w-32 lg:w-30 h-auto">
+        <img src="images/3b54b93e-e1c0-4236-8ca3-5af528914d07_removalai_preview.png">
     </div>
     <div class="flex items-center space-x-2">
         <i class="fas fa-bars text-xl"></i>
@@ -23,12 +23,13 @@
     </div>
 </header>
 
-<section class="h-screen bg-black pt-24 md:pt-32 px-4 md:px-10">
+<section class="h-screen bg-black px-4 md:px-10">
     <div class="swiper mySwiper h-full">
+
         <div class="swiper-wrapper">
 
             <!-- Slide 1 -->
-            <div class="swiper-slide h-full flex items-center justify-center bg-cover bg-center bg-black"
+            <div class="swiper-slide h-screen flex items-center justify-center bg-cover bg-center bg-black"
                  style="background-image: url('images/randompic21wpng.png');">
                 <div class="text-white text-center">
                     <h1 class="text-3xl md:text-5xl lg:text-7xl font-bold">NEW UPCOMING THIS SUMMER</h1>
@@ -36,19 +37,19 @@
             </div>
 
             <!-- Slide 2 -->
-            <div class="swiper-slide h-full flex items-center justify-center bg-cover bg-center bg-black px-4 md:px-20 lg:px-40"
+            <div class="swiper-slide h-screen flex items-center justify-end bg-cover bg-black px-4 md:px-20 lg:px-60"
                  style="background-image: url('images/special edition (1).png');">
                 <div class="text-center">
-                    <img src="images/1df6e320-7839-488f-8edc-8d7a2791a3d2_removalai_preview.png" class="w-3/4 md:w-2/3 lg:w-1/2 h-auto mx-auto">
+                    <img src="images/1df6e320-7839-488f-8edc-8d7a2791a3d2_removalai_preview.png" class="max-w-xs md:max-w-md lg:max-w-lg w-auto h-100 mx-auto">
                 </div>
             </div>
 
             <!-- Slide 3 -->
-            <div class="swiper-slide h-full flex items-end bg-cover bg-center bg-black px-4 md:px-10 lg:px-20"
+            <div class="swiper-slide h-screen flex items-end bg-cover bg-center bg-black px-4 md:px-10 lg:px-20"
                  style="background-image: url('images/darkflask1wpng.png');">
-                <div class="text-white pb-10 md:pb-20">
-                    <h2 class="text-xs md:text-sm px-3 tracking-widest">GT-640</h2>
-                    <h3 class="text-3xl md:text-6xl lg:text-8xl mb-4 font-bold">DARK FLASK</h3>
+                <div class="text-white pb-20">
+                    <h2 class="text-sm md:text-lg px-3 tracking-widest">GT-640</h2>
+                    <h3 class="text-4xl md:text-6xl lg:text-8xl mb-4 font-bold">DARK FLASK</h3>
                     <h4 class="px-3 text-white text-xs md:text-sm font-['Playfair_Display'] tracking-widest">NEW FLASK</h4>
                 </div>
             </div>
@@ -92,22 +93,32 @@
     });
 </script>
 
-<section class="py-10 bg-white text-center">
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 px-2">
-        <img src="images/bottle1.png" alt="Bottle" class="w-full h-auto">
-        <img src="images/bottle2.png" alt="Bottle" class="w-full h-auto">
-        <img src="images/bottle3.png" alt="Bottle" class="w-full h-auto">
-        <img src="images/bottle4.png" alt="Bottle" class="w-full h-auto">
-        <img src="images/collection3.png" alt="Bottle" class="w-full h-auto">
-        <img src="images/collection2.png" alt="Bottle" class="w-full h-auto">
-        <img src="images/collection4.png" alt="Bottle" class="w-full h-auto">
-        <img src="images/collection5.png" alt="Bottle" class="w-full h-auto">
+<section class="py-2 bg-white text-center">
+    <!-- Thumbnail Gallery (Grid) -->
+    <div id="imageGallery" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 px-2">
+        <button class="image-button group relative">
+            <img src="images/bottle1.png" alt="Bottle 1" class="w-full h-full object-cover transition-all duration-300 ease-in-out group-hover:opacity-0">
+            <img src="images/bottle1hover.png" alt="Bottle 1 Hover" class="w-full h-full object-cover absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">
+        </button>
+        <button class="image-button group relative">
+            <img src="images/bottle2.png" alt="Bottle 2" class="w-full h-full object-cover transition-all duration-300 ease-in-out group-hover:opacity-0">
+            <img src="images/bottle2hover.png" alt="Bottle 2 Hover" class="w-full h-full object-cover absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">
+        </button>
+        <button class="image-button group relative">
+            <img src="images/bottle3.png" alt="Bottle 3" class="w-full h-full object-cover transition-all duration-300 ease-in-out group-hover:opacity-0">
+            <img src="images/bottle3hover.png" alt="Bottle 3 Hover" class="w-full h-full object-cover absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">
+        </button>
+        <button class="image-button group relative">
+            <img src="images/bottle4.png" alt="Bottle 4" class="w-full h-full object-cover transition-all duration-300 ease-in-out group-hover:opacity-0">
+            <img src="images/bottle4hover.png" alt="Bottle 4 Hover" class="w-full h-full object-cover absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">
+        </button>
     </div>
 </section>
 
-<footer class="py-20 px-4 md:px-10 lg:px-40 bg-black text-white">
+
+<footer class="py-20 px-4 md:px-20 lg:px-60 bg-black text-white">
     <img src="images/a589862f-9d57-4dd3-bdb0-413de0b7eacb_removalai_preview.png"
-         class="filter grayscale brightness-0 invert py-7 w-auto max-w-[8rem] mx-auto" alt="Horizun Logo">
+         class="filter grayscale brightness-0 invert py-7 w-auto max-w-[8rem]" alt="Horizun Logo">
 
     <div class="py-4">
         <ul class="flex flex-wrap justify-center gap-4 text-sm">
@@ -128,5 +139,3 @@
 
 </body>
 </html>
-
-
