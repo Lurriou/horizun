@@ -14,5 +14,6 @@ Horizun is a luxury flask and bottle brand combining Italian craftsmanship with 
 - **HTML**
 - **Tailwind**
 - **JavaScript**
+- **Internal CSS**
 - **GitHub** (version control)
 
